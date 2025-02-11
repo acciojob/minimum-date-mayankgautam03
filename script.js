@@ -1,5 +1,17 @@
 function minDate(dates) {
   //write you code here
+	let earliestDate = dates[0]; // Pehla date ko sabse chhoti maan lo
+
+  // Har date ko check karo
+  for (let i = 1; i < dates.length; i++) {
+    if (dates[i] < earliestDate) { // Agar koi chhoti date mil gayi toh update karo
+      earliestDate = dates[i];
+    }
+  }
+
+  return earliestDate; // Sabse chhoti date return karo
+}
+
 }
 
 // Do not change the code
